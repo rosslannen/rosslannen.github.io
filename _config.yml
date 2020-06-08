@@ -1,0 +1,24 @@
+collections:
+  recipes:
+    output: true
+
+  categories:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+  - scope:
+      path: ""
+      type: categories
+    values:
+      layout: category
+
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: recipe

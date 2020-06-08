@@ -1,0 +1,34 @@
+---
+title: Home
+---
+
+<section class="section">
+  <div class="container">
+    <h1>Lannen Family Recipes</h1>
+  
+    <div class="columns is-multiline">
+      {% for category in site.categories %}
+        {% assign recipes = site.recipes
+        | where_exp: 'recipe', 'recipe.categories contains category.name' %}
+        <div class="column is-6">
+          <a href="{{ category.url }}" class="box">
+            <h2 class="is-capitalized">
+              {{ category.name }}
+            </h2>
+            
+            <p>
+              {% assign num_recipes = recipes.size %}
+              {% if num_recipes == 0 %}
+                No recipes
+              {% elsif num_recipes == 1 %}
+                {{ num_recipes }} recipe
+              {% else %}
+                {{ num_recipes }} recipes
+              {% endif %}
+            </p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

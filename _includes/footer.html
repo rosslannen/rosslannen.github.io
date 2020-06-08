@@ -1,0 +1,9 @@
+{% capture footer_content %}
+  {% include footer.md %}
+{% endcapture %}
+
+<footer class="footer">
+  <div class="content container has-text-centered">
+    {{ footer_content | markdownify }}
+  </div>
+</footer>

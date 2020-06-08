@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="is-capitalized">
+      {{ page.name }}
+    </h1>
+    
+    {{ content }}
+    
+    <div class="columns is-multiline">
+      {% assign recipes = site.recipes
+      | where_exp: 'recipe', 'recipe.categories contains page.name' %}
+      {% for recipe in recipes %}
+        <div class="column is-6">
+          <a href="{{ recipe.url }}" class="box content">
+            <h2 class="is-capitalized">
+              {{ recipe.name }}
+            </h2>
+
+            <p>
+              {% assign excerpt = recipe.content | split: site.excerpt_separator | first %}
+              {{ excerpt }}
+            </p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
