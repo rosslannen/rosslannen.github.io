@@ -1,5 +1,5 @@
 <nav
-  class="navbar is-fixed-top is-light"
+  class="navbar is-fixed-top is-dark"
   role="navigation"
   aria-label="main navigation">
   <div class="container">
@@ -27,25 +27,40 @@
           
           <div class="navbar-dropdown">
             {% for category in site.categories %}
-              <a class="navbar-item is-capitalized" href={{ category.url }}>
+              <a
+                class="navbar-item is-capitalized
+                       {% if category.url == page.url %}is-active{% endif %}"
+                href={{ category.url }}>
                 {{ category.name }}
               </a>
             {% endfor %}
             
-            <hr class="navbar-divider">
-            
-            <a class="navbar-item">
-              All Recipes TODO
-            </a>
+            <!-- TODO: make an all recipes page
+                 <hr class="navbar-divider">
+
+                 <a class="navbar-item">
+                 All Recipes
+                 </a>
+            -->
           </div>
         </div>
       </div>
       
       <div class="navbar-end">
         <div class="navbar-item">
-          <a class="button is-primary">
-            GitHub
-          </a>
+          <div class="buttons">
+            <a
+              class="button is-success"
+              href="https://github.com/rosslannen/rosslannen.github.io/issues/new">
+              Add Recipe
+            </a>
+
+            <a
+              class="button is-inverted"
+              href="https://github.com/rosslannen/rosslannen.github.io">
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </div>
