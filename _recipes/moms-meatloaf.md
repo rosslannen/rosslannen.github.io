@@ -30,3 +30,5 @@ Grandma's favorite meatloaf recipe.
 
 ## Notes
 - Beef can be substituted for ground turkey.
+- Other vegetables such as peppers, mushrooms, jalapenos can be added. If using more vegetables
+  do not add milk as they will have more moisture.
