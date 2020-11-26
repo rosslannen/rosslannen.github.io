@@ -26,7 +26,7 @@ Grandma's favorite meatloaf recipe.
 1. Mix all the ingredients except bacon.
 1. Pack into an 8" x 4" buttered tin.
 1. Cover with strips of bacon.
-1. Bake at 305 degress for 1 hour, or until it shrinks from the side of the pan and is well browned.
+1. Bake at 350 degress for 1 hour, or until it shrinks from the side of the pan and is well browned.
 
 ## Notes
 - Beef can be substituted for ground turkey.
