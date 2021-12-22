@@ -7,6 +7,8 @@ categories:
 - cocktails
 ---
 
+Easy to make Gin cocktail.
+
 ## Ingredients
 - 2 oz Gin
 - 1 oz Lemon Juice
